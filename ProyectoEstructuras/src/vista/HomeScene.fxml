@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.HomeController">
+    <children>
+      <TextArea fx:id="txtTransbordos" editable="false" layoutX="37.0" layoutY="408.0" prefHeight="130.0" prefWidth="723.0" promptText="Instrucciones..." />
+        <Label alignment="CENTER" layoutX="199.0" layoutY="35.0" prefHeight="50.0" prefWidth="400.0" text="Rutas de buses" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+        <Button fx:id="btnFile" alignment="CENTER" contentDisplay="CENTER" layoutX="316.0" layoutY="85.0" mnemonicParsing="false" onAction="#subirArchivo" text="Subir archivo de texto">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+        <Label fx:id="labelFile" alignment="CENTER" layoutY="137.0" prefHeight="17.0" prefWidth="800.0" text="Label" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <TextArea fx:id="txtConsola" editable="false" layoutX="37.0" layoutY="172.0" prefHeight="137.0" prefWidth="723.0" promptText="Consola" />
+      <Button fx:id="btnCacularDj" layoutX="315.0" layoutY="326.0" mnemonicParsing="false" onAction="#calcularDj" text="Hallar ruta mas rapida!">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfTiempo" layoutX="171.0" layoutY="372.0" prefHeight="25.0" prefWidth="181.0" />
+      <TextField fx:id="tfNumRutas" layoutX="599.0" layoutY="372.0" prefHeight="25.0" prefWidth="106.0" />
+      <Label alignment="CENTER" layoutX="66.0" layoutY="376.0" prefHeight="17.0" prefWidth="86.0" text="Tiempo total" />
+      <Label alignment="CENTER" layoutX="457.0" layoutY="376.0" prefHeight="17.0" prefWidth="124.0" text="Numero de Rutas" />
+      <TextField fx:id="tfOrigen" layoutX="134.0" layoutY="329.0" promptText="Origen" />
+      <TextField fx:id="tfDestino" layoutX="525.0" layoutY="329.0" promptText="Destino" />
+    </children>
+</AnchorPane>
